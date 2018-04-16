@@ -217,16 +217,13 @@ h1 {
   flex-wrap: wrap;
 }
 .line:hover{
-    width:100px;
+    width:105%;
 }
 .line{
-    position:relative;
-    top: 50%;
-    left:20%;
-    margin-right:3%;
-    background-color:black;
-    width:50px;
-    height:1px;
+
+    background-color: #353946;
+    width:50%;
+    height:2px;
     -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
     transform: width 2s;
 }
@@ -234,5 +231,9 @@ h1 {
     color: black;
     font-size: 1.875em; /* 30px/16=1.875em */
     font-family: 'Oswald', sans-serif;
-
+    position:relative;
+    top: 50%;
+    left:20%;
+    width:auto;
+    margin-right:3%;
 }
