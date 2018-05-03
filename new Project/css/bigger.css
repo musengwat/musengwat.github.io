@@ -4,10 +4,7 @@ html {
   height: 100%;
   width:100%;
 /*    background-color:grey;*/
-  background-image:url(/images/creek.gif);
-  background-repeat: no-repeat;
-    background-position: bottom center;
-  background-size: cover;
+
   color:white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,27 +13,54 @@ body {
   margin: 0;
   min-height: 100%;
   overflow: auto;
+    background-color: white;
   background-size: cover;
-    
+}
+.cover{
+    z-index: 2;
+    margin-top:100vh;
+    margin-bottom:0px;
+    height:auto;
+    background-color:white;
+    font-size:36px;    
+}
+.parallax{
+    background-image:url(/images/creek.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.Header{
+    width:100%;
+    font-family: 'Open Sans', sans-serif;
+    position: fixed;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 5em;
+    text-align:center;
+    color:#c3d2c3;
+/*    background-color: #ff000000;*/
 }
 .title {
-font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     position: relative;
     margin-left: 10px;
     text-align: center;
     font-size: 3em;
-        text-align:center;
+    text-align:center;
+    color:black;
 }
 #overlay {
     position: fixed; /* Sit on top of the page content */
     display: none; /* Hidden by default */
-    width: 100%;  /* Full width  (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
+    width: 100vw;  /* Full width  (cover the whole page) */
+    height: 100vh; /* Full height (cover the whole page) */
     top: 0; 
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 2;  /* Specify a stack order in case you're using a different order for other elements */
+    z-index: 0;  /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
 }
 @-webkit-keyframes rotation {
@@ -96,8 +120,10 @@ font-family: 'Open Sans', sans-serif;
 
 .bodyText{
     position:relative;
+    text-align:justify;
     top:5px;
     font-family: "Sintony", sans-serif;
+    color:black;
 }
 .body{
     margin-left:5%;
@@ -165,7 +191,7 @@ font-family: 'Open Sans', sans-serif;
     animation-iteration-count: 1;
 }
 .scale-down{
-    background-color: white;
+    background-color: #c3d2c3;
     animation-timing-function: ease-in-out ;
     -webkit-animation: scale-down 2.3s normal;
     transform-origin: left top;
@@ -173,7 +199,7 @@ font-family: 'Open Sans', sans-serif;
     animation-iteration-count: 1;
 }
 .scale-up{
-    background-color: white;
+    background-color: #c3d2c3;
     animation-timing-function: ease-in-out ;
     -webkit-animation: scale-up 2.5s normal;
     transform-origin: left top;

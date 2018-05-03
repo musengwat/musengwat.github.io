@@ -1,19 +1,21 @@
   var elem = document.querySelector('.parallax');
-  var instance = M.Parallax.init(elem, options);
 
-  // Or with jQuery
+$(window).scroll(function () {
+    var scrollTop = $(window).scrollTop();
+    var height = $(window).height();
+    $('.Header').css({
+        'opacity': (((height - scrollTop) / height) - .2), 
+    });
+});
 
-  $(document).ready(function(){
-    $('.parallax').parallax();
-  });
-      
+
+
 
 function asdf() {
     console.log("clicked");
     alert("you now have the big gay");
 }
-    var open = false;
-
+          var open = false;
 
 function popDown(){
     console.log("=====================")
