@@ -3,7 +3,7 @@
 $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
     var height = $(window).height();
-    $('.Header').css({
+    $('.opc').css({
         'opacity': (((height - scrollTop) / height) - .2), 
     });
 });
@@ -21,7 +21,7 @@ function popDown(){
     console.log("=====================")
     console.log("before = " + open);
     if (open == false){
-    document.getElementById("overlay").style.display = "block";
+    document.getElementById("scale").style.display = "block";
     document.getElementById("rotate").classList.remove("top-reverse");
     document.getElementById("scale").classList.remove("scale-down");
     document.getElementById("move").classList.remove("move-down");
@@ -33,6 +33,7 @@ function popDown(){
     open = true;
     }
     else{
+            document.getElementById("scale").style.display = "block";
     document.getElementById("rotate").classList.remove("top-active");        
     document.getElementById("scale").classList.remove("scale-up");
     document.getElementById("move").classList.remove("move-up");

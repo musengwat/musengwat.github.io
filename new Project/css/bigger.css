@@ -25,22 +25,28 @@ body {
     font-size:36px;    
 }
 .parallax{
-    background-image:url(/images/creek.gif);
+    background-image:url(/images/A%20peaceful%20morning%20in%20the%20countryside%20%5BOC%5D%20-%20Imgur.gif);
+    background-position: bottom top;
+    z-index: -1;
+    height:100vh;
+    width:100vw;
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 .Header{
     width:100%;
     font-family: 'Open Sans', sans-serif;
-    position: fixed;
+    position: absolute;
     margin-left: 10px;
     text-align: center;
     font-size: 5em;
     text-align:center;
-    color:#c3d2c3;
-/*    background-color: #ff000000;*/
+/*    color:#c3d2c3;*/
+    color:black;
+}
+.opc{
+    
 }
 .title {
     font-family: 'Open Sans', sans-serif;
@@ -113,11 +119,6 @@ body {
     }
 }
 
-.flex-container {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
 .bodyText{
     position:relative;
     text-align:justify;
@@ -138,9 +139,10 @@ body {
 .top{
     height:50vw;
     top: -1px;
+    display: none;
     width: 200%;
     position: relative;
-/*    background-color:red;*/
+    background-color:red;
 }
 .clear{
         background-color: #ffffff00;
@@ -212,7 +214,7 @@ body {
 
 .topnav a {
     position: relative;
-    z-index: -1;
+    z-index: 2;
   float: right;
   color: #f2f2f2;
   text-align: center;
@@ -252,6 +254,9 @@ body {
 }
 .menu-icon__line-right {
   width: 30px;
+}
+.flexItem{
+      flex-basis: <20%> | auto; /* default auto */
 }
 .flex-container {
   -webkit-transform: rotate(-35deg);
